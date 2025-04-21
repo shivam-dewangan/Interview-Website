@@ -3,7 +3,7 @@
 
 An intelligent platform to simulate **real-time technical interviews** using AI and voice input — tailored to your resume and selected tech domain.
 
-![AI Interview Screenshot](./Frontend/src/assets/1.png)
+![Task Screenshot](./Frontend/public/1.png)
 
 
 ---
