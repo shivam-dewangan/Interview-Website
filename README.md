@@ -3,7 +3,7 @@
 
 An intelligent platform to simulate **real-time technical interviews** using AI and voice input — tailored to your resume and selected tech domain.
 
-![AI Interview Screenshot](./frontend/assets/ss/s1.png)
+![AI Interview Screenshot](./Frontend/src/assets/ss/s1.png)
 
 ---
 
@@ -20,14 +20,14 @@ An intelligent platform to simulate **real-time technical interviews** using AI 
 
 ### 🧪 Domain-Specific Preparation
 Choose from various domains to practice:
-![AI Interview Screenshot](./frontend/public/ss/s6.png)
+![AI Interview Screenshot](./Frontend/src/assets/ss/s6.png)
 - MERN Stack  
 - MEAN Stack  
 - AI/ML  
 - Cloud & DevOps  
 - Data Structures & Algorithms  
 - Custom Topics *(coming soon)*
-- ![AI Interview Screenshot](./frontend/public/ss/s5.png)
+- ![AI Interview Screenshot](./Frontend/src/assets/ss/s5.png)
 
 ### 📊 AI-Powered Feedback
 After each answer, you receive:
@@ -35,8 +35,8 @@ After each answer, you receive:
 - Technical evaluation  
 - Communication feedback  
 - Final score (e.g. 8.2/10)
-![AI Interview Screenshot](./frontend/public/ss/s4.png)
-![AI Interview Screenshot](./frontend/public/ss/s2.png)
+![AI Interview Screenshot](./Frontend/src/assets/ss/s4.png)
+![AI Interview Screenshot](./Frontend/src/assets/ss/s2.png)
 ---
 
 ## 🛠 Tech Stack
