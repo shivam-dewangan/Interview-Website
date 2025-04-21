@@ -1,0 +1,109 @@
+/* Main container for the interview page */
+.interview-container {
+  margin: 60px auto;
+  padding: 40px 80px;
+  width: 80%;
+  max-width: 900px;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for the heading */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Container for the webcam section */
+/* Container for the webcam section */
+.webcam-container {
+  position: fixed;
+  bottom: 100px;      
+  right: 50px;       
+  z-index: 9999;     /* Ensure it stays on top of other elements */
+  border: 4px solid rgba(255, 255, 255, 0.7);  /* Softer white border */
+  border-radius: 12px;  /* Increased border radius for smoother corners */
+  padding: 8px;      /* More padding for a neater look */
+  background-color: #222;  /* Dark background with slight variation for contrast */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  /* Deeper shadow for a more polished look */
+  overflow: hidden;  /* Hide any overflow from the webcam container */
+  width: 360px;      /* Increased width for a more balanced look */
+  height: 270px;     /* Increased height for better webcam visibility */
+  transition: all 0.3s ease;  /* Smooth transition for positioning */
+}
+
+/* Styling for webcam preview */
+.webcam-preview {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; 
+  object-fit: cover;   
+}
+
+/* Styling for the question text */
+.interview-questions p {
+  font-size: 2.25rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for the question number and text */
+.interview-questions strong {
+  color: #007bff;
+}
+
+/* Button styling for starting and navigating through questions */
+.next-question-btn,
+.start-interview-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Hover effect for buttons */
+.next-question-btn:hover,
+.start-interview-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .webcam-container {
+    position: relative;
+    margin: 0 auto 20px; /* Center the webcam on smaller screens */
+    width: 280px; /* Reduced size on smaller screens */
+    height: 210px; /* Reduced size on smaller screens */
+  }
+
+  .webcam-preview {
+    width: 100%;
+    height: 100%;
+  }
+
+  .interview-questions p {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Adjust the buttons for smaller screens */
+  .next-question-btn,
+  .start-interview-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

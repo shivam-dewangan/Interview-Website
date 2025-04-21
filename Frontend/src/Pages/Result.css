@@ -1,0 +1,88 @@
+/* Main container for the result page */
+.result-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2c4c4;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #eeaeae;
+}
+
+/* Heading styles */
+.result-container h1 {
+  text-align: center;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Styling for each result item */
+.result-item {
+  background-color: #c7cbcb; /* Light gray color for the background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for result items */
+.result-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for question text */
+.result-item p {
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Styling for strong text (question/answer labels) */
+.result-item strong {
+  color: black;
+  font-weight: 500;
+}
+
+/* Styling for the answer text */
+.result-item p:last-child {
+  color: green;
+  font-style: italic;
+}
+
+/* When no answer is provided, style the answer accordingly */
+.result-item p:last-child:empty {
+  color: #e74c3c;  /* Red color for "No answer recorded" */
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Add space between the last result item and the container */
+.result-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .result-container {
+    padding: 20px;
+  }
+
+  .result-item {
+    padding: 15px;
+  }
+
+  .result-container h1 {
+    font-size: 28px;
+  }
+
+  .result-item p {
+    font-size: 16px;
+  }
+}

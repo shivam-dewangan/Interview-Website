@@ -1,0 +1,135 @@
+/* Body Background */
+body {
+  background: linear-gradient(135deg, #FFA8A8 0%, #FFD700 100%); 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;  
+}
+
+/* Interview Container */
+.interview-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  border-radius: 20px;  
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  color: #333; 
+}
+
+/* Heading */
+.interview-container h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;  
+}
+
+/* Resume Upload Section */
+.resume-upload {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9ebc0;  
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);  
+}
+
+.resume-upload label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;  
+}
+
+.resume-upload input {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #bdc3c7;  
+  border-radius: 6px;
+  background: #ffffff;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.resume-upload input:hover {
+  border-color: #3498db;  
+}
+
+/* Webcam Section */
+.webcam-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 480px;  /* Increased height for better visibility */
+  border-radius: 15px;  /* Slightly more rounded corners */
+  margin: 20px auto;
+  background: #d0f4de;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);  /* Optional: Adds a shadow effect */
+}
+
+/* Webcam Preview */
+
+
+/* Webcam Placeholder */
+.webcam-placeholder {
+  font-size: 18px;
+  color: #7f8c8d;  /* Placeholder text color */
+  text-align: center;
+}
+
+/* Permissions Button */
+button {
+  margin: 20px 0;
+  padding: 12px 25px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  background: #3498db;  
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2980b9;  
+}
+
+button.active {
+  background: #27ae60; 
+}
+
+button:disabled {
+  background: #bdc3c7;  
+  cursor: not-allowed;
+}
+
+/* Start Interview Button */
+.start-btn {
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #2ecc71;  
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: #27ae60;  
+}
+
+.start-btn:disabled {
+  background: #bdc3c7;  
+  cursor: not-allowed;
+}

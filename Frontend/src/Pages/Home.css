@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 60px 20px; /* Slightly reduced */
+    color: black;
+    background: linear-gradient(135deg, #FFA8A8 0%, #FFD700 100%); /* Softer gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Banner Styling */
+.banner {
+    width: 100%;
+    height: 500px; /* Adjusted for balance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px; /* More compact */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full coverage */
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 25px;
+    padding: 20px;
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #222;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 8px;
+    color: #333;
+}
+
+/* Interview Options */
+.interview-options h2 {
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.interview-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+}
+
+/* Interview Cards */
+.interview-card {
+    background: #444;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.interview-card:hover {
+    background: linear-gradient(135deg, #F0FF00 10%, #58CFFB 100%);
+    color: #222;
+    transform: scale(1.08); /* Slightly more elevation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        padding: 65px 15px;
+    }
+
+    .banner {
+        height: 400px; /* Adjusted for better fit */
+    }
+
+    .banner img {
+        object-fit: cover; /* Maintain full coverage */
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .interview-card {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
