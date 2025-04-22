@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { login } from "../services/authService"; // your login API
+import { login } from "../services/authService"; // Your login API service
 import "./Login.css";
 import bgVideo from "../assets/bg.mp4";
 
@@ -13,16 +13,21 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await login({ email, password });
+      // Log the email and password to ensure it's correct (for debugging purposes)
+      console.log("Email:", email);
+      console.log("Password:", password);
 
-      // Store necessary data in localStorage
-      
+      const res = await login({ email, password }); // Call your login API
+      console.log('Login response:', res); // Log the response for debugging
+
+      // Store necessary data in localStorage for demo purposes
       localStorage.setItem("email", email);
-      localStorage.setItem("password", password); // ⚠️ Use only for testing/demo
+      localStorage.setItem("password", password); // ⚠️ This is just for testing/demo
 
       alert("Login Successful!");
-      navigate("/home");
+      navigate("/home"); // Navigate to the home page after successful login
     } catch (error) {
+      console.error("Login error:", error); // Log the error for debugging
       alert(error.response?.data?.message || "Login failed!");
     }
   };
